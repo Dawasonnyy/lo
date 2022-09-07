@@ -1,231 +1,447 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="frontend.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Rubik+Wet+Paint&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mochiy+Pop+One&family=Rubik+Wet+Paint&display=swap"
-      rel="stylesheet"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
     <title>Dawit Israel</title>
   </head>
-  <body>
-    <div class="body">
-      <nav id="nav">
-        <div class="logo">Dawit Israel</div>
-        <ul>
-          <li class="list"><a href="#projects">Projects</a></li>
-          <li class="list"><a href="#languages-page">Languages</a></li>
-          <li class="thirdlist"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+  <body >
+    <div >
+      <section id="desktop">
 
-      <div  class="container">
-        <div class="me"><img src="me.jpeg" alt="me" /></div>
-        <h1>
-          Hey there I'm <span>Dawit Israel </span>&nbsp;<span class="waves"
-            >👋</span
-          >
-        </h1>
+        <nav class="nav_nav">
+            <div class="nav">
+          <div ><a href="index.html"class="logo">Dawit</a></div>
+          <ul class="nav__list">
+            <li class="nav__list--link home"><a href="desktop.html">home</a></li>
+    
+            <li class="nav__list--link"><a href="#" onclick="ContactPop()">Contact </a></li>
+    
+            
+    
+            <li class="nav__list--link"><a href="New folder/Resume.pdf" target="_blank">resume</a></li>
+          </ul>
+        </nav>
+        
+    
+        <div class="home__page">
+            <div class="contact__remove" onclick="Remove()">
+                <div class="desktop__main" >
+                   <div class="desktop__main-img">
+                    <img src="./New folder/background.jpg" alt="Me" />
+                  </div>
+                  
+                  <div class="desktop__main-description">
+                    <h1 class="desktop__main-header">HI THERE!</h1>
+                    <h5 class="desktop__main-subheader">I am Dawit</h5>
+                    <p  class="desktop__main-para1 animation1">Frontend developer</p>
+                    <p class="desktop__main-para2 animation2">UX/UI Developer</p>
+                  </div>
+                 
+                </div>
 
-        <p>
-          I'm a <span>Frontend software engineer</span>  from Ethiopia
-          <img class="waves" src="ethiopia.png" width="25px" /></span>
-          with a strong passion for building responsive and performant web
-          applications with great user experiences.
-        </p>
-        <div class="logos">
-          <a href="https://github.com/Dawasonnyy"
-            ><img src="git.png" alt=""
-          /></a>
-          <a href="#"><img src="mail.png" alt="" /></a>
-          <a href="https://www.instagram.com/dawa_sonny/"
-            ><img src="insta.png" alt=""
-          /></a>
-          <a href="#"><img src="ln.png " alt="" /></a>
+                <div class="desktop__aboutme-page">
+
+                 
+                    <div class="desktop__aboutme">
+                      <h1 class="desktop__aboutme-header">About me</h1>
+                      <p class="desktop__aboutme-para">Hi, I’m Dawit Israel, a Front-end developer focused on creating beautiful and user friendly applications while writing clean code. </p>
+                    </div>
+                  </div>   
+                </div>
+                  
+                  <div class="desktop__contact-page" >
+                  
+                    <form  action="" class="desktop__input--field" id="contact_page">
+                      <div class="contact__contents">
+                        <div class="desktop__address">
+                          <figure class="desktop_contact-fig">
+                            
+                            <img src="New folder/location.png" alt="location" class="desktop__contact-img"><br>
+                            <label class="contact__para">Address: <span class="contact__span">Addis Ababa,Ethiopia</span></label>
+                          </figure>
+    
+                          <figure class="desktop_contact-fig">
+                            <img src="New folder/call.png" alt="location" class="desktop__contact-img"><br>
+                            <label class="contact__para">Phone: <span class="contact__span">+251 92 358 0987</span></label>
+                          </figure>
+                          
+    
+                          <figure class="desktop_contact-fig">
+                            <img src="New folder/mail.png" alt="location" class="desktop__contact-img"><br>
+                            <label class="contact__para">Email: <span class="contact__span">dawitisrael9b@gmail.com</span></label>
+                          </figure>
+                        </div>
+    
+                      </div>
+                      <hr>
+                      
+                  <div class="desktop__input">
+
+                    <h1 class="desktop__header"> Get In touch with me</h1>
+                    <input type="text" name="user__name" id="desktop__name" placeholder="Your Name"/>
+                    <br />
+                    
+                    <input type="email" name="user__email" id="desktop__email" placeholder="Your Email" />
+                    <br />
+                    
+                    <textarea name="message" id="desktop__message" placeholder="Your Message"></textarea>
+                    <br />
+                   <button class="submit" onclick="Pip()"><a href="#">Submit</a></button>
+                  </form>
+                  </div>
+                  <div class="desktop__loading" id="load"><img class="img__spinner" src="/New folder/spinner.png" alt="spinner"></div>
+                <div class="desktop__success" id="successpage" >
+                  <h3 class="desktop__success-page">Looking Forward to speaking with you :)</h3>
+                  <img  onclick="Remove()" src="/New folder/cancel2.png" alt="cancel"  id="xbtn" class="cancel__img">
+                </div>
+               
+                  </div>
+                  
+
+                  <div class="contact__remove" onclick="Remove()">
+                 <div class="desktop__lang-page">
+                  <h1 class="desktop__skills-header">Skills</h1>
+        <div class="desktop__lang">
+
+          <div class="desktop__lang1">
+         
+
+          <figure class="desktop__lang-fig">
+            <img src="New folder/css.png" alt="css" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">css</h4>
+
+          </figure>
+
+          <figure class="desktop__lang-fig">
+            <img src="New folder/html.png" alt="html" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">html</h4>
+
+          </figure>
+
+          <figure class="desktop__lang-fig">
+            <img src="New folder/java.png" alt="java" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">javascript</h4>
+
+          </figure>
+          <figure class="desktop__lang-fig">
+            <img src="New folder/mobx.png" alt="mobx" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">mobx</h4>
+
+          </figure>
+        </div>
+          <div class="desktop__lang2">
+        
+
+          <figure class="desktop__lang-fig">
+            <img src="New folder/nuxt.png" alt="nuxt" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">nuxt</h4>
+
+          </figure>
+
+          <figure class="desktop__lang-fig">
+            <img src="New folder/react.png" alt="react" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">react</h4>
+
+          </figure>
+
+          <figure class="desktop__lang-fig">
+            <img src="New folder/typescript.png" alt="typescript" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">typescript</h4>
+
+          </figure>
+
+          <figure class="desktop__lang-fig">
+            <img src="New folder/vue.png" alt="vue" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">vue</h4>
+
+          </figure>
+        </div>
+        <h1 class="desktop__skills-header">Other</h1>
+        <div class="desktop__other-lang">
+          
+
+          <figure class="desktop__lang-fig">
+            <img src="New folder/firebase.png" alt="vue" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">Firebase</h4>
+
+          </figure>
+
+          <figure class="desktop__lang-fig">
+            <img src="New folder/git.png" alt="vue" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">Git</h4>
+
+          </figure>
+
+          <figure class="desktop__lang-fig">
+            <img src="New folder/photoshop.png" alt="vue" class="desktop__lang-img">
+            <h4 class="desktop__lang-header">photoshop</h4>
+
+          </figure>
+
         </div>
       </div>
-    </div>
-    <div id="languages-page"class="language-page">
-        <h2>This is my technology stack</h2>
-        
-        
-    <div class="language">
-    <figure>
-        <img src="css.png" alt="Css">
-    </figure>
-        <span class="img-name">Css</span>
-    </div>
 
-    <div class="language">
-        <figure>
-            <img src="html.png" alt="html"> 
-        </figure>
-        <span class="img-name">html</span>
-    </div>
-
-    <div class="language">
-        <figure>
-            <img src="java.png" alt="java"> 
-        </figure>
-        <span class="img-name">java</span>
-    </div>
-
+        </div>
     
-    <div class="language">
-        <figure>
-            <img src="react.png" alt="react">     
-        </figure>
-        <span class="img-name">react</span>
-    </div>
+    
+        <div class="footer">
+            <footer>
+                <footer class="desktop__footer">
+                   <div class="desktop__wrapper">
+                    
+                    <figure class="desktop__logo-figure">
+                      <a href="https://github.com/Dawasonnyy" class="desktop__footer-logo-links"
+                        ><img
+                          src="./New folder/github.png"
+                          alt="github"
+                          class="desktop__footer-logos"
+                      /></a>
+                    </figure>
+                    <figure class="desktop__logo-figure">
+                      <a href="https://www.linkedin.com/in/dawit-israel-b3a046245" class="desktop__footer-logo-links"
+                        ><img
+                          src="./New folder/insta.png"
+                          alt="insta"
+                          class="desktop__footer-logos"
+                      /></a>
+                    </figure>
+                    <figure class="desktop__logo-figure">
+                      <a href="https://t.me/dawa_sonny" class="desktop__footer-logo-links"
+                        ><img
+                          src="./New folder/linkedin.png"
+                          alt="linkedin"
+                          class="desktop__footer-logos"
+                      /></a>
+                    </figure>
+                    <figure class="desktop__logo-figure">
+                      <a href="https://wa.me/251923580987" class="desktop__footer-logo-links"
+                        ><img src="./New folder/whatsapp.png" alt="whatsapp"
+                        class="desktop__footer-logos"></a
+                      >
+                    </figure>
 
-        
-    <div class="language">
-        <figure>
-            <img src="typescript.png" alt="typescript">  
-        </figure>
-        <span class="img-name">typescript</span>
-    </div>
 
-    <div class="language">
-        <figure>
-            <img src="mobx.png" alt="mobx"> 
-        </figure>
-        <span class="img-name">mobx</span>
-    </div>
+                   </div>
+                   
+                    <div class="footer__para">
+                      2022 - Created by Dawit Israel
+                    </div>
+                  </footer>
+            </footer>
+          </div>
+        </div>
+    
 
-    <div class="language">
-        <figure>
-            <img src="nuxt.png" alt="nuxt">   
-        </figure>
-        <span class="img-name">nuxt</span>
-    </div>
-
-    <div class="language">
-        <figure>
-            <img src="vue.png" alt="vue">
-        </figure>
-        <span class="img-name">Vue</span>
-    </div>
+      </section>
 </div>
-</section>
-<section id="projects">
-  <div class="container">
-    <div class="row">
-      <h1 class="section__title">Here are some of my <span class="text--purple">projects</span></h1>
-      <ul class="project__list">
-        <li class="project">
-          <div class="project__wrapper">
-            <img src="loopit.png" class="project__img" alt="Car subscription project">
-            <div class="project__description">
-              <h3 class="project__description--title">Car sales project</h3>
-              <h4 class="project__description--sub-title">
-                Html, CSS, JavaScript, Vue, Vuex
-              </h4>
-              <p class="project__description--para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
-                luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
-              </p>
-              <div class="project__description--links">
-                <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
-                  <i class="fab fa-github"><img src="" alt=""></i>
-                </a>
-                <a href="https://www.yourwebsite.com" class="project__description--link">
-                  <i class="fas fa-link"><img src="" alt=""></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="project">
-          <div class="project__wrapper">
-            <img src="loopit.png" class="project__img" alt="Car subscription project">
-            <div class="project__description">
-              <h3 class="project__description--title">Car sales project</h3>
-              <h4 class="project__description--sub-title">
-                Html, CSS, JavaScript, Vue, Vuex
-              </h4>
-              <p class="project__description--para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
-                luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
-              </p>
-              <div class="project__description--links">
-                <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.yourwebsite.com" class="project__description--link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="project">
-          <div class="project__wrapper">
-            <img src="loopit.png" class="project__img" alt="Car subscription project">
-            <div class="project__description">
-              <h3 class="project__description--title">Dashboard</h3>
-              <h4 class="project__description--sub-title">
-                Html, CSS, JavaScript, Vue, Vuex
-              </h4>
-              <p class="project__description--para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
-                luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
-              </p>
-              <div class="project__description--links">
-                <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.yourwebsite.com" class="project__description--link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<footer>
-    <div class="footer">
-        <a ></a>
-
-        <a href="#nav" id="top">Top</a> <a href="#nav" id="top1">Top</a>
-        <ul >
-            <li class="list"><a href="#">GitHub</a></li>
-            <li class="list"><a href="#">Instagram</a></li>
-            <li class="list"><a href="#">LinkedIn</a></li>
-            <li class="list"><a href="#">Mail</a></li>
-        </ul>
-        <p>Copyright © 2022 Dawit Israel</p>
-    </div>
-   
-</footer>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     
+    
+  <div class="mobile" id="mobile">
+
+    <div class="mobile__home--page">
+        <nav class="mobile__nav" >
+          <div class="mobile__menu--btn">
+            <img
+              src="./New folder/menu.png"
+              onclick="Pop()"
+              alt="menu"
+              class="mobile_menu-img"
+            />
+          </div> <div class="mobile__logo"><a href="mobile.html">Dawit</a></div>
+        </nav>
+        <ul class="mobile__menu--list" id="swipe">
+          <li class="mobile__list--links"><a href="mobile.html">Home</a></li>
+          <li class="mobile__list--links"><a href="#"  onclick="RemoveSlide(),  ContactPop()" >Contact Me</a></li>
+          <li class="mobile__list--links"><a href="#">My resume</a></li>
+          
+        </ul>
+        <div class="contact"onclick="Remove()" >
+          <div class="mobile__main" >
+             <div class="mobile__main-img">
+              <img src="./New folder/background.jpg" alt="Me" />
+            </div>
+            
+            <div class="mobile__main-description">
+              <h1 class="mobile__main-header">HI THERE!</h1>
+              <h5 class="mobile__main-subheader">I am Dawit</h5>
+              <p  class="mobile__main-para1 animation1">Frontend developer</p>
+              <p class="mobile__main-para2 animation2">UX/UI Developer</p>
+            </div>
+           
+          </div>
+  
+         
+          
+        
+        
+  
+        <div class="mobile__contact-page" >
+          <form  action="" class="input__field" id="contact">
+            <h1 class="mobile__header"> Get In touch with me</h1>
+            <input type="text" name="user__name" id="mobile__name" placeholder="Your Name"/>
+            <br />
+            
+            <input type="email" name="user__email" id="email" placeholder="Your Email" />
+            <br />
+            
+            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+            <br />
+           <button class="submit_btn" onclick="Pip()"><a href="#">Submit</a></button>
+          </form>
+          <div class="loading" id="load"><img class="img__spinner" src="/New folder/spinner.png" alt="spinner"></div>
+        <div class="success" id="successpage" >
+          <h3 class="mobile__success-page">Looking Forward to speaking with you :)</h3>
+          <img  onclick="Remove()" src="/New folder/cancel2.png" alt="cancel"  id="xbtn" class="cancel__img">
+          
+        </div>
+        </div>
+      </div>
+  
+        
+  
+        <div class="mobile__aboutme-page">
+          <div class="mobile__aboutme">
+            <h1 class="mobile__aboutme-header">About me</h1>
+            <p class="mobile__aboutme-para">Hi, I’m Dawit Israel, a Front-end developer focused on creating beautiful and user friendly applications while writing clean code.</p>
+          </div>
+        </div>
+  
+        <div class="mobile__lang-page">
+          <div class="mobile__lang">
+            <h1 class="mobile__lang_header">Skills</h1>
+            <div class="mobile__lang1">
+           
+  
+            <figure class="mobile__lang-fig">
+              <img src="./New folder/css.png" alt="css" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">css</h4>
+  
+            </figure>
+  
+            <figure class="mobile__lang-fig">
+              <img src="New folder/html.png" alt="html" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">html</h4>
+  
+            </figure>
+  
+            <figure class="mobile__lang-fig">
+              <img src="New folder/java.png" alt="java" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">javascript</h4>
+  
+            </figure>
+          </div>
+          <div class="mobile__lang2">
+            <figure class="mobile__lang-fig">
+              <img src="New folder/mobx.png" alt="mobx" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">mobx</h4>
+  
+            </figure>
+          
+            
+          
+  
+            <figure class="mobile__lang-fig">
+              <img src="New folder/nuxt.png" alt="nuxt" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">nuxt</h4>
+  
+            </figure>
+  
+            <figure class="mobile__lang-fig">
+              <img src="New folder/react.png" alt="react" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">react</h4>
+  
+            </figure>
+          </div>
+          <div class="mobile__lang2">
+            <figure class="mobile__lang-fig">
+              <img src="New folder/typescript.png" alt="typescript" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">typescript</h4>
+  
+            </figure>
+  
+            <figure class="mobile__lang-fig">
+              <img src="New folder/vue.png" alt="vue" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">vue</h4>
+  
+            </figure>
+          </div>
+          <h1 class="mobile__lang_header other">other</h1>
+          <div class="mobile__lang3">
+            <figure class="mobile__lang-fig">
+              <img src="New folder/firebase.png" alt="firebase" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">Firebase</h4>
+  
+            </figure>
+            <figure class="mobile__lang-fig">
+              <img src="New folder/git.png" alt="git" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">git</h4>
+  
+            </figure>
+            <figure class="mobile__lang-fig">
+              <img src="New folder/photoshop.png" alt="photoshop" class="mobile__lang-img">
+              <h4 class="mobile__lang-header">photoshop</h4>
+  
+            </figure>
+
+
+
+          </div>
+          </div>
+        </div>
+      </div>
+  
+      
+  
+      <footer class="mobile__footer">
+        <figure class="mobile__logo-figure">
+          <a href="https://github.com/Dawasonnyy" class="mobile__footer-logo-links"
+            ><img
+              src="./New folder/github.png"
+              alt="github"
+              class="mobile__footer-logos"
+          /></a>
+        </figure>
+        <figure class="mobile__logo-figure">
+          <a href="https://www.instagramcom/in/dawa_sonny class="mobile__footer-logo-links"
+            ><img
+              src="./New folder/insta.png"
+              alt="insta"
+              class="mobile__footer-logos"
+          /></a>
+        </figure>
+        <figure class="mobile__logo-figure">
+          <a href="https://www.linkedin.com/in/dawit-israel-b3a046245" class="mobile__footer-logo-links"
+            ><img
+              src="./New folder/linkedin.png"
+              alt="linkedin"
+              class="mobile__footer-logos"
+          /></a>
+        </figure>
+        <figure class="mobile__logo-figure">
+          <a href="https://wa.me/251923580987" target="_blank" class="mobile__footer-logo-links"
+            ><img src="./New folder/whatsapp.png" alt="whatsapp
+            class="mobile__footer-logos"></a
+          >
+        </figure>
+      </footer>
+      <div class="mobile__message-mebtn"> <a href="#" "><img
+        src="./New folder/messenger.png"
+        alt="messenger"
+        class="messagebtn"
+        onclick=" ContactPop()"
+      /></a>
+        
+      </div>
+
+
+
+
+</div>
+
+    <script src="script.js"></script>
   </body>
 </html>
